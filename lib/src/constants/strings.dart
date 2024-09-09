@@ -48,5 +48,5 @@ const String learnLanguage =
 
 const String searchLang = "Chercher une langue";
 const String tchooseLang = "continuer";
-const String mLLang = "Medumba";
-const String eLLang = "Ewondo";
+const String mLLang = "Mə̀dʉ̂mbɑ̀ (Medumba)";
+const String eLLang = "Kóló (Ewondo)";
