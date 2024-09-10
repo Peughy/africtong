@@ -4,6 +4,7 @@
  */
 
 const double borderRadius = 4;
+const double borderBottomNavigationRadius = 24;
 const double padVertical = 16;
 const double borderWidth = 1.5;
 const double hSpacing = 20;

@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:africtong/src/constants/colors.dart';
+import 'package:africtong/src/constants/images.dart';
 import 'package:africtong/src/constants/size.dart';
 import 'package:africtong/src/constants/strings.dart';
 import 'package:africtong/src/features/choose_language/views/languages.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ChooseLanguageView extends StatelessWidget {
   const ChooseLanguageView({super.key});
@@ -18,16 +19,24 @@ class ChooseLanguageView extends StatelessWidget {
               const SizedBox(height: emptySpace),
               Padding(
                 padding: const EdgeInsets.all(pad),
-                child: Text(
-                  learnLanguage,
-                  style: GoogleFonts.dmSerifDisplay(
-                    color: primaryColor,
-                    fontSize: largeText,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: letterSpacing,
-                    height: lineSpacing,
-                  ),
-                  textAlign: TextAlign.center,
+                child: Row(
+                  children: [
+                    const Image(
+                      image: AssetImage(botIndicate),
+                      height: 80,
+                    ),
+                    const SizedBox(width: 10),
+                    Text(
+                      learnLanguage,
+                      style: GoogleFonts.dmSerifDisplay(
+                        color: Colors.black,
+                        fontSize: largeText * 0.7,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: letterSpacing,
+                        height: lineSpacing,
+                      ),
+                    ),
+                  ],
                 ),
               ),
               const SizedBox(
@@ -52,7 +61,7 @@ class ChooseLanguageView extends StatelessWidget {
                           errorBorder: InputBorder.none,
                           disabledBorder: InputBorder.none,
                           filled: true,
-                          fillColor: chooseLang,
+                          fillColor: chooseLangOff,
                           hintText: searchLang,
                           hintStyle: GoogleFonts.openSans(
                               fontSize: 18,

@@ -16,4 +16,5 @@ const darkColor = Colors.black;
 const onBoardingPage1 = Colors.white;
 const onBoardingPage2 = primaryColor;
 const onBoardingPage3 = Color(0xFFFFDCBD);
-const chooseLang = Color.fromARGB(255, 237, 246, 250);
+const chooseLangOn = Color(0xFFE2EFF6);
+const chooseLangOff = Color(0xFFEEEEEE);

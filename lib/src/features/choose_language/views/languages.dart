@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:africtong/src/constants/colors.dart';
 import 'package:africtong/src/constants/size.dart';
 import 'package:africtong/src/features/choose_language/controllers/choose_language_controller.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Languages extends StatefulWidget {
   const Languages({
@@ -35,8 +35,10 @@ class _LanguagesState extends State<Languages> {
                 padding: const EdgeInsets.symmetric(
                     vertical: hSpacing, horizontal: 40),
                 width: double.infinity,
-                decoration: const BoxDecoration(
-                  color: chooseLang,
+                decoration: BoxDecoration(
+                  color: chooseLanguageController.langues[val].chooseLangue
+                      ? chooseLangOn
+                      : chooseLangOff ,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,

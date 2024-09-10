@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "144007670192",
+    "project_id": "africtong-85f15",
+    "storage_bucket": "africtong-85f15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144007670192:android:0450bbc89a08add1490e75",
+        "android_client_info": {
+          "package_name": "com.example.africtong"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGZtp1F6nVihr-tnfIuz9HahnxysZ_q88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

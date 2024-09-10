@@ -33,6 +33,7 @@ const String tMdpOublie = "Mot de passe oublié";
 const String gSign = "Continuer avec google";
 const String tPCompte = "Pas de compte ?";
 const String tCompte = "Déjà un compte ?";
+const String app_name = "africtong";
 
 // signup
 const String signupLargeText = "Inscription.";
@@ -44,7 +45,7 @@ const String emptyField = "Veuillez completer ce champ !";
 // choose language
 const String speakLanguage = "Choisissez votre langue parlée";
 const String learnLanguage =
-    "Choisissez la langue que vous souhaitez apprendre";
+    "Choisissez la langue \n que vous souhaitez \n apprendre";
 
 const String searchLang = "Chercher une langue";
 const String tchooseLang = "continuer";

@@ -48,9 +48,10 @@ class OnBoardingPage extends StatelessWidget {
                         textAlign: TextAlign.center),
                   ],
                 ),
+                const SizedBox(height: 10,),
                 Text(model.counter,
                     style: GoogleFonts.montserrat(
-                        color: Colors.black, fontWeight: FontWeight.bold)),
+                        color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20)),
                 const SizedBox(
                   height: 70.0,
                 )
