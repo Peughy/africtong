@@ -5,7 +5,7 @@ import 'package:africtong/src/constants/size.dart';
 import 'package:africtong/src/constants/strings.dart';
 import 'package:africtong/src/features/authentification/views/login/login_views.dart';
 import 'package:africtong/src/features/authentification/views/signup/signup_views.dart';
-import 'package:africtong/src/features/choose_language/views/choose_language_view.dart';
+import 'package:africtong/src/features/home/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -87,7 +87,7 @@ class OnBoardingLastPage extends StatelessWidget {
               const SizedBox(height: hSpacing),
               TextButton(
                   onPressed: () => navigatorPage.changePage(
-                      context, const ChooseLanguageView()),
+                      context, const HomeView()),
                   child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
