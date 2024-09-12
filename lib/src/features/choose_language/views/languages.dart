@@ -38,7 +38,7 @@ class _LanguagesState extends State<Languages> {
                 decoration: BoxDecoration(
                   color: chooseLanguageController.langues[val].chooseLangue
                       ? chooseLangOn
-                      : chooseLangOff ,
+                      : chooseLangOff,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -47,7 +47,7 @@ class _LanguagesState extends State<Languages> {
                       children: [
                         Text(chooseLanguageController.langues[val].nomLangue[0],
                             style: GoogleFonts.pirataOne(
-                                fontSize: largeText,
+                                fontSize: largeSize,
                                 fontWeight: FontWeight.bold,
                                 color: chooseLanguageController
                                         .langues[val].chooseLangue
@@ -56,7 +56,7 @@ class _LanguagesState extends State<Languages> {
                         const SizedBox(width: 15),
                         Text(chooseLanguageController.langues[val].nomLangue,
                             style: GoogleFonts.montserrat(
-                                fontSize: langText,
+                                fontSize: langSize,
                                 fontWeight: FontWeight.bold,
                                 color: chooseLanguageController
                                         .langues[val].chooseLangue

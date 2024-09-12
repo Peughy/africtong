@@ -73,6 +73,7 @@ flutter:
   assets:
     - assets/images/on_boarding/
     - assets/images/welcome/
+    - assets/images/home/
     - assets/images/login/
     - assets/logo/login/
     - assets/logo/bot/

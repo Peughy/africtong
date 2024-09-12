@@ -25,3 +25,7 @@ const botProfil = "assets/logo/bot/bot_profil.png";
 const botAnalyse = "assets/logo/bot/bot_analyze.png";
 const botAssist = "assets/logo/bot/bot_assist.png";
 const botAssistLight = "assets/logo/bot/bot_assist_light.png";
+const botAnalyseBlue = "assets/logo/bot/bot_analyse_blue.png";
+
+// home page
+const quizzImage = "assets/images/home/quizz.png";

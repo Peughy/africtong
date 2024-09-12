@@ -30,7 +30,7 @@ class ChooseLanguageView extends StatelessWidget {
                       learnLanguage,
                       style: GoogleFonts.dmSerifDisplay(
                         color: Colors.black,
-                        fontSize: largeText * 0.7,
+                        fontSize: largeSize * 0.7,
                         fontWeight: FontWeight.bold,
                         letterSpacing: letterSpacing,
                         height: lineSpacing,

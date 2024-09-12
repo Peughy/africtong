@@ -18,3 +18,6 @@ const onBoardingPage2 = primaryColor;
 const onBoardingPage3 = Color(0xFFFFDCBD);
 const chooseLangOn = Color(0xFFE2EFF6);
 const chooseLangOff = Color(0xFFEEEEEE);
+
+// home page
+const questionColor = Color.fromARGB(20, 255, 255, 3);

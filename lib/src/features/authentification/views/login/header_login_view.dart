@@ -19,7 +19,7 @@ class HeaderLoginView extends StatelessWidget {
           alignment: Alignment.centerLeft,
           child: Text(loginLargeText,
               style: GoogleFonts.montserrat(
-                fontSize: lText,
+                fontSize: lSize,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),

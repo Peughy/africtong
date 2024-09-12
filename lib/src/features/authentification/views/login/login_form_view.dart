@@ -38,6 +38,7 @@ class LoginFormView extends StatelessWidget {
           const SizedBox(height: hSpacing),
           TextFormField(
             style: GoogleFonts.openSans(fontSize: 18, color: Colors.black),
+            obscureText: true,
             decoration: InputDecoration(
               focusedBorder: const OutlineInputBorder(
                   borderSide: BorderSide(
@@ -71,6 +72,7 @@ class LoginFormView extends StatelessWidget {
                 loginController.sendLoginForm(key, context);
               },
               style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.black,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(borderRadius),
                   ),

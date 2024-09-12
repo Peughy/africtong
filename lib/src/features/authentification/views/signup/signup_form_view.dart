@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:africtong/src/constants/size.dart';
 import 'package:africtong/src/constants/strings.dart';
 import 'package:africtong/src/features/authentification/controllers/signup/signup_controller.dart';
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 // ignore: must_be_immutable
 class SignupFormView extends StatelessWidget {
@@ -56,6 +56,7 @@ class SignupFormView extends StatelessWidget {
           const SizedBox(height: hSpacing),
           TextFormField(
             style: GoogleFonts.openSans(fontSize: 18, color: Colors.black),
+            obscureText: true,
             decoration: InputDecoration(
               focusedBorder: const OutlineInputBorder(
                   borderSide: BorderSide(

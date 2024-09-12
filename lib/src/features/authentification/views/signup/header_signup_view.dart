@@ -19,7 +19,7 @@ class HeaderSignupView extends StatelessWidget {
           alignment: Alignment.centerLeft,
           child: Text(signupLargeText,
               style: GoogleFonts.montserrat(
-                fontSize: lText,
+                fontSize: lSize,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),

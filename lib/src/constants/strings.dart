@@ -51,3 +51,37 @@ const String searchLang = "Chercher une langue";
 const String tchooseLang = "continuer";
 const String mLLang = "Mə̀dʉ̂mbɑ̀ (Medumba)";
 const String eLLang = "Kóló (Ewondo)";
+
+// home text welcome bot
+const String welcomeBot1 =
+    "Hello, je suis Jimi ton assistant\ntout au long de cette avanture\nje suis trés excité de commencer\ncette nouvelle avanture avec toi";
+const String welcomeBot2 =
+    "Amoureux de ta langue maternelle?\nJe suis tout aussi disponnible\npour transformer tes souhaits en\nréalité et te voir conversez en ta langue";
+const String welcomeBot3 =
+    "Nous avons une grande aventure!\nEnsemble nous allons analyser\ntes erreurs. Converser et discuter\nEt tu pourra traduire tes textes!";
+
+// home page text
+const String langLearn = "Découvrez nos langues enseignées";
+const String profitJimi = "Profitez de Jimi";
+const String profitTraduction = "Découvrez notre traduction inter-langues";
+const String profitBot = "Besoin d'explication ?";
+const String texteTraduction =
+    "Sans plus tarder, traduisez vos textes pour un apprentissage de qualité et une comprehension plus avancée de la langue";
+const String texteBot =
+    "Utilisez Jimi, votre assistant personnel pour toute incomprehension et pour d'amples explications";
+const String botInputText = "Posez une question ?";
+const String translateInputText = "Entez un texte";
+
+// home page - stat
+const String statLecons = "Leçons";
+const String statPrononciations = "Songs";
+const String statExercices = "Exercices";
+const String statQuizz = "Quizz";
+
+// home page - question bot
+const String question_1 = "Quel est l'histoire du medumba ?";
+const String question_2 = "Quel peuple parle l'Ewondo ?";
+const String question_3 = "Bonjour";
+const String question_4 = "Quelle est la ville qui parle le medumba ?";
+const String question_5 =
+    "Quelle est l'importance de parler ca langue maternelle ?";
