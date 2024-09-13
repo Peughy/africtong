@@ -4,7 +4,7 @@ import 'package:africtong/src/constants/size.dart';
 import 'package:africtong/src/constants/strings.dart';
 import 'package:africtong/src/features/home/controllers/home_controller.dart';
 import 'package:africtong/src/features/home/views/home_page_view.dart';
-import 'package:africtong/src/features/lecons/views/lecons.dart';
+import 'package:africtong/src/features/lecons/views/lecons_view.dart';
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
@@ -44,8 +44,8 @@ class _HomePageContentState extends State<HomePageContent> {
         backgroundColor: primaryColor,
         title: Text(
           app_name, // quicksand, dosis, oxygen, comfortaa
-          style: GoogleFonts.dosis(
-              fontSize: 48, letterSpacing: -0.5, color: Colors.white),
+          style: GoogleFonts.comfortaa(
+              fontSize: 32, letterSpacing: -1, color: Colors.white),
         ),
         actions: [
           Padding(
@@ -108,7 +108,7 @@ class _HomePageContentState extends State<HomePageContent> {
           onTap: (index) {
             setState(() => homeController.bottomNavIndex = index);
           }),
-      body: [HomePageView(), Lecons()][homeController.bottomNavIndex + 1],
+      body: [HomePageView(), LeconsView()][homeController.bottomNavIndex + 1],
     );
   }
 }

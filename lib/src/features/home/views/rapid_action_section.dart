@@ -27,6 +27,7 @@ class RapidActionSection extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               RapidActionView(icon: Icons.translate),
+              RapidActionView(icon: Icons.add),
               RapidActionView(icon: Icons.stacked_bar_chart_rounded),
               RapidActionView(icon: Icons.person),
             ],

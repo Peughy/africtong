@@ -74,7 +74,7 @@ const String translateInputText = "Entez un texte";
 
 // home page - stat
 const String statLecons = "Leçons";
-const String statPrononciations = "Songs";
+const String statPrononciations = "Accents";
 const String statExercices = "Exercices";
 const String statQuizz = "Quizz";
 
@@ -85,3 +85,5 @@ const String question_3 = "Bonjour";
 const String question_4 = "Quelle est la ville qui parle le medumba ?";
 const String question_5 =
     "Quelle est l'importance de parler ca langue maternelle ?";
+
+const String placeholderSearchLang = "Chercher une leçon";
