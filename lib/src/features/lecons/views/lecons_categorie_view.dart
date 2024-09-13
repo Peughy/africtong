@@ -16,6 +16,8 @@ class LeconsCategorieView extends StatelessWidget {
       child: SizedBox(
         height: MediaQuery.of(context).size.height,
         child: ListView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
           itemCount: leconsCategorieController.categories.length,
           itemBuilder: (context, index) {
             return GestureDetector(

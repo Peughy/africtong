@@ -8,6 +8,7 @@ import 'package:africtong/src/features/lecons/views/lecons_view.dart';
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomeView extends StatefulWidget {
@@ -56,7 +57,8 @@ class _HomePageContentState extends State<HomePageContent> {
                       homeController.bottomNavIndex = -1;
                     });
                   },
-                  icon: const Icon(Icons.home, size: 28, color: Colors.white))),
+                  icon: const FaIcon(FontAwesomeIcons.house,
+                      size: 26, color: Colors.white))),
         ],
       ),
       floatingActionButton: FloatingActionButton(
@@ -77,7 +79,7 @@ class _HomePageContentState extends State<HomePageContent> {
             return Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(
+                FaIcon(
                   homeController.iconList[index],
                   size: 24,
                   color: color,

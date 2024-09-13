@@ -2,7 +2,8 @@ import 'package:africtong/firebase_options.dart';
 import 'package:africtong/src/commons/navigator_page.dart';
 import 'package:africtong/src/constants/colors.dart';
 import 'package:africtong/src/constants/size.dart';
-import 'package:africtong/src/features/authentification/views/onBoarding/on_boarding_views.dart';
+// import 'package:africtong/src/features/authentification/views/onBoarding/on_boarding_views.dart';
+import 'package:africtong/src/features/home/views/home_view.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: Colors.black),
-      home: const OnBoardingViews(),
+      home: const HomeView(),
     );
   }
 }

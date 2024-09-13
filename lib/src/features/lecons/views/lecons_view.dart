@@ -10,6 +10,7 @@ class LeconsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SingleChildScrollView(
+      physics: ScrollPhysics(),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         children: [

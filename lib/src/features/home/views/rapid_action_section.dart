@@ -2,6 +2,7 @@ import 'package:africtong/src/constants/colors.dart';
 import 'package:africtong/src/constants/size.dart';
 import 'package:africtong/src/features/home/views/rapid_action_view.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class RapidActionSection extends StatelessWidget {
   const RapidActionSection({
@@ -26,10 +27,10 @@ class RapidActionSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              RapidActionView(icon: Icons.translate),
-              RapidActionView(icon: Icons.add),
-              RapidActionView(icon: Icons.stacked_bar_chart_rounded),
-              RapidActionView(icon: Icons.person),
+              RapidActionView(icon: FontAwesomeIcons.language),
+              RapidActionView(icon: FontAwesomeIcons.plus),
+              RapidActionView(icon: FontAwesomeIcons.rankingStar),
+              RapidActionView(icon: FontAwesomeIcons.userLarge),
             ],
           )
         ],
