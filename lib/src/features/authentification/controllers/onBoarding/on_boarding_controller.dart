@@ -1,14 +1,16 @@
-import 'package:liquid_swipe/PageHelpers/LiquidController.dart';
+import 'package:africtong/src/commons/navigator_page_bar.dart';
 import 'package:africtong/src/constants/colors.dart';
 import 'package:africtong/src/constants/images.dart';
 import 'package:africtong/src/constants/strings.dart';
 import 'package:africtong/src/features/authentification/models/on_boarding/on_boarding_model.dart';
 import 'package:africtong/src/features/authentification/views/onBoarding/on_boarding_last_page.dart';
 import 'package:africtong/src/features/authentification/views/onBoarding/on_boarding_page.dart';
+import 'package:liquid_swipe/PageHelpers/LiquidController.dart';
 
 class OnBoardingController {
   final controller = LiquidController();
   int currentPage = 0;
+  NavigatorPage navigatorPage = NavigatorPage();
 
   final pages = [
     // pages 1
@@ -52,10 +54,6 @@ class OnBoardingController {
     var nextPage = controller.currentPage + 1;
     // (controller.currentPage == 2) ? 0 : controller.currentPage + 1;
     controller.animateToPage(page: nextPage, duration: 1000);
-  }
-
-  void ignorer() {
-    controller.animateToPage(page: 3, duration: 1000);
   }
 
   void pageChanged(int activePageIndex) {

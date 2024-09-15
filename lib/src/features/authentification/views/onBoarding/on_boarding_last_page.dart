@@ -1,4 +1,4 @@
-import 'package:africtong/src/commons/navigator_page.dart';
+import 'package:africtong/src/commons/navigator_page_bar.dart';
 import 'package:africtong/src/constants/colors.dart';
 import 'package:africtong/src/constants/images.dart';
 import 'package:africtong/src/constants/size.dart';

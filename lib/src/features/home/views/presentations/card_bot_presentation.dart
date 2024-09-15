@@ -1,5 +1,5 @@
 import 'package:africtong/src/constants/size.dart';
-import 'package:africtong/src/features/home/controllers/card_bot_presentation_controller.dart';
+import 'package:africtong/src/features/home/controllers/presentations/card_bot_presentation_controller.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';

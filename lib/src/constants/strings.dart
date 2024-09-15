@@ -33,7 +33,7 @@ const String tMdpOublie = "Mot de passe oublié";
 const String gSign = "Continuer avec google";
 const String tPCompte = "Pas de compte ?";
 const String tCompte = "Déjà un compte ?";
-const String app_name = "africtong";
+const String appName = "africtong";
 
 // signup
 const String signupLargeText = "Inscription.";
@@ -69,7 +69,7 @@ const String texteTraduction =
     "Sans plus tarder, traduisez vos textes pour un apprentissage de qualité et une comprehension plus avancée de la langue";
 const String texteBot =
     "Utilisez Jimi, votre assistant personnel pour toute incomprehension et pour d'amples explications";
-const String botInputText = "Posez une question ?";
+const String botInputText = "Posez une question";
 const String translateInputText = "Entez un texte";
 
 // home page - stat
@@ -87,3 +87,7 @@ const String question_5 =
     "Quelle est l'importance de parler ca langue maternelle ?";
 
 const String placeholderSearchLang = "Chercher une leçon";
+
+// bot discussion
+const String tDiscussion = "Conversations";
+const String tNewDiscussion = "Nouvelle discussion";

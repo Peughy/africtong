@@ -1,6 +1,6 @@
 import 'package:africtong/src/constants/size.dart';
 import 'package:africtong/src/constants/strings.dart';
-import 'package:africtong/src/features/home/views/card_bot_presentation.dart';
+import 'package:africtong/src/features/home/views/presentations/card_bot_presentation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

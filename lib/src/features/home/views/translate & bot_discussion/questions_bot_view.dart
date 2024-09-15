@@ -1,6 +1,6 @@
 import 'package:africtong/src/constants/colors.dart';
 import 'package:africtong/src/constants/size.dart';
-import 'package:africtong/src/features/home/controllers/question_bot_controller.dart';
+import 'package:africtong/src/features/home/controllers/translate%20&%20bot_discussion/question_bot_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

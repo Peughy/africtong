@@ -1,7 +1,7 @@
 import 'package:africtong/src/constants/colors.dart';
 import 'package:africtong/src/constants/images.dart';
 import 'package:africtong/src/constants/strings.dart';
-import 'package:africtong/src/features/home/models/card_bot_presentation_model.dart';
+import 'package:africtong/src/features/home/models/presentations/card_bot_presentation_model.dart';
 import 'package:flutter/material.dart';
 
 class CardBotPresentationController {

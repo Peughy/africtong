@@ -1,7 +1,7 @@
 import 'package:africtong/src/constants/colors.dart';
 import 'package:africtong/src/constants/size.dart';
 import 'package:africtong/src/constants/strings.dart';
-import 'package:africtong/src/features/home/views/card_stat_view.dart';
+import 'package:africtong/src/features/home/views/stats/card_stat_view.dart';
 import 'package:flutter/material.dart';
 
 class StatPresentation extends StatelessWidget {

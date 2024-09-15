@@ -1,9 +1,11 @@
+import 'package:africtong/src/commons/navigator_page_bar.dart';
 import 'package:africtong/src/constants/colors.dart';
 import 'package:africtong/src/constants/images.dart';
 import 'package:africtong/src/constants/size.dart';
 import 'package:africtong/src/constants/strings.dart';
-import 'package:africtong/src/features/home/controllers/home_controller.dart';
-import 'package:africtong/src/features/home/views/home_page_view.dart';
+import 'package:africtong/src/features/bot_discussion/views/discussion_interface/discussion_interface_view.dart';
+import 'package:africtong/src/features/home/controllers/presentations/home_controller.dart';
+import 'package:africtong/src/features/home/views/presentations/home_page_view.dart';
 import 'package:africtong/src/features/lecons/views/lecons_view.dart';
 import 'package:animated_bottom_navigation_bar/animated_bottom_navigation_bar.dart';
 import 'package:auto_size_text/auto_size_text.dart';
@@ -36,7 +38,10 @@ class HomePageContent extends StatefulWidget {
 }
 
 class _HomePageContentState extends State<HomePageContent> {
+  // variable
   HomeController homeController = HomeController();
+  NavigatorPage navigatorPage = NavigatorPage();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,7 +49,9 @@ class _HomePageContentState extends State<HomePageContent> {
       appBar: AppBar(
         backgroundColor: primaryColor,
         title: Text(
-          app_name, // quicksand, dosis, oxygen, comfortaa
+          [appName, statLecons, statPrononciations, statExercices, statQuizz][
+              homeController.bottomNavIndex +
+                  1], // quicksand, dosis, oxygen, comfortaa
           style: GoogleFonts.comfortaa(
               fontSize: 32, letterSpacing: -1, color: Colors.white),
         ),
@@ -62,7 +69,8 @@ class _HomePageContentState extends State<HomePageContent> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () =>
+            navigatorPage.changePage(context, const BotInterfaceView()),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
         backgroundColor: secondaryColor,
         child: const Image(

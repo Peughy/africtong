@@ -1,8 +1,9 @@
+import 'package:africtong/src/constants/colors.dart';
+import 'package:africtong/src/features/authentification/controllers/onBoarding/on_boarding_controller.dart';
+import 'package:africtong/src/features/home/views/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
-import 'package:africtong/src/constants/colors.dart';
-import 'package:africtong/src/features/authentification/controllers/onBoarding/on_boarding_controller.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingViews extends StatefulWidget {
@@ -57,7 +58,8 @@ class _OnBoardingViewsState extends State<OnBoardingViews> {
             top: 50,
             right: 20,
             child: TextButton(
-              onPressed: obController.ignorer,
+              onPressed: () => obController.navigatorPage
+                  .changePage(context, const HomeView()),
               child: Text("Ignorer",
                   style: GoogleFonts.montserrat(
                       color: Colors.black, fontWeight: FontWeight.bold)),

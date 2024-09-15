@@ -1,7 +1,7 @@
 import 'package:africtong/src/constants/size.dart';
 import 'package:africtong/src/constants/strings.dart';
-import 'package:africtong/src/features/home/controllers/home_page_controller.dart';
-import 'package:africtong/src/features/home/views/card_language_presentation.dart';
+import 'package:africtong/src/features/home/controllers/presentations/home_page_controller.dart';
+import 'package:africtong/src/features/home/views/presentations/card_language_presentation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

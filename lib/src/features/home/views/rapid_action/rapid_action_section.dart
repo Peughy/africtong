@@ -1,6 +1,7 @@
 import 'package:africtong/src/constants/colors.dart';
 import 'package:africtong/src/constants/size.dart';
-import 'package:africtong/src/features/home/views/rapid_action_view.dart';
+import 'package:africtong/src/features/home/views/rapid_action/rapid_action_view.dart';
+import 'package:africtong/src/features/translate/views/translate_page_view.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -27,10 +28,17 @@ class RapidActionSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              RapidActionView(icon: FontAwesomeIcons.language),
-              RapidActionView(icon: FontAwesomeIcons.plus),
-              RapidActionView(icon: FontAwesomeIcons.rankingStar),
-              RapidActionView(icon: FontAwesomeIcons.userLarge),
+              RapidActionView(
+                icon: FontAwesomeIcons.language,
+                route: TranslatePageView(),
+              ),
+              RapidActionView(
+                  icon: FontAwesomeIcons.heartCircleBolt, route: null),
+              RapidActionView(
+                icon: FontAwesomeIcons.rankingStar,
+                route: null,
+              ),
+              RapidActionView(icon: FontAwesomeIcons.userLarge, route: null),
             ],
           )
         ],

@@ -11,7 +11,7 @@ const double hSpacing = 20;
 const double pad = 24;
 
 const double lSize = 48;
-const double largeSize= 36;
+const double largeSize = 36;
 const double mediumSize = 28;
 const double btnText = 20;
 const double langSize = 22;

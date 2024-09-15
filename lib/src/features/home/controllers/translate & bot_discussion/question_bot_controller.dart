@@ -1,5 +1,5 @@
 import 'package:africtong/src/constants/strings.dart';
-import 'package:africtong/src/features/home/models/question_bot_model.dart';
+import 'package:africtong/src/features/home/models/translate%20&%20bot_discussion/question_bot_model.dart';
 
 class QuestionBotController{
   List<QuestionBotModel> questions =  const [
