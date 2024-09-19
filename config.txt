@@ -1,0 +1,8 @@
+Type de compte = ["apprenant", "admin"]
+
+cmd: keytool -list -v -keystore %USERPROFILE%\.android\debug.keystore -alias androiddebugkey -storepass android -keypass android
+SHA 1: 97:80:00:C6:64:62:B0:65:23:9C:2C:62:D9:76:CD:00:39:06:A8:B4
+SHA 256: 3B:B5:97:7E:3F:32:09:C8:EE:B8:94:EA:C8:B8:CB:77:F9:0B:48:43:57:1D:B4:45:BD:21:44:46:E9:54:F2:D3
+
+Collections 
+    -> utilisateurs[id_utilisateur, email, nom, type_compte, profil]

@@ -20,4 +20,4 @@ const chooseLangOn = Color(0xFFE2EFF6);
 const chooseLangOff = Color(0xFFEEEEEE);
 
 // home page
-const questionColor = Color.fromARGB(20, 255, 255, 3);
+const questionColor = Color(0x13FFFF03);

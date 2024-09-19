@@ -1,5 +1,7 @@
 // onBoaring section
 
+// èéêâàôùç
+
 // -- Large text
 const String onBoardingLargeText1 = "Découvrez un nouveau univers";
 const String onBoardingLargeText2 = "Apprenez où que vous soyez";
@@ -29,11 +31,21 @@ const String tUsername = "Nom d'utilisateur";
 const String tUsernamePlaceholder = "Entrez votre nom d'utilisateur";
 const String tMdp = "Mot de passe";
 const String tMdpPlaceholder = "Entrez votre mot de passe";
+const String tEmailError = "Adresse mail invalide";
+const String tMdpError =
+    "Le mot de passe doit avoir au moins six (06) caractères";
+const String tErreur = "Nous avons rencontré une erreur";
+const String tEmailExist = "L'adresse mail existe déjà";
 const String tMdpOublie = "Mot de passe oublié";
 const String gSign = "Continuer avec google";
 const String tPCompte = "Pas de compte ?";
 const String tCompte = "Déjà un compte ?";
 const String appName = "africtong";
+const String doneConnexion = "Inscription réussie";
+const String chooseLangError = "Vous devez choisir une langue d'apprentissage";
+
+// faible
+const String tMdpFaible = "Le mot de passe est trop faible";
 
 // signup
 const String signupLargeText = "Inscription.";

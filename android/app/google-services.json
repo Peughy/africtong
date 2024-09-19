@@ -12,7 +12,20 @@
           "package_name": "com.example.africtong"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "144007670192-m31kcakmeceog8igmpmbsu2kvs81vnkn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.africtong",
+            "certificate_hash": "978000c66462b065239c2c62d976cd003906a8b4"
+          }
+        },
+        {
+          "client_id": "144007670192-nh56u4mis0addu9lbloujtn02ku9id38.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCGZtp1F6nVihr-tnfIuz9HahnxysZ_q88"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144007670192-nh56u4mis0addu9lbloujtn02ku9id38.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "144007670192-asl8roku295r8bigv24h45bj252aq7t7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.africtong"
+              }
+            }
+          ]
         }
       }
     }

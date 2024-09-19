@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:africtong/src/constants/size.dart';
-import 'package:africtong/src/features/authentification/views/signup/footer_signup_view.dart';
-import 'package:africtong/src/features/authentification/views/signup/header_signup_view.dart';
-import 'package:africtong/src/features/authentification/views/signup/signup_form_view.dart';
+import 'package:africtong/src/features/authentification/views/signup/widgets/footer_signup_view.dart';
+import 'package:africtong/src/features/authentification/views/signup/widgets/header_signup_view.dart';
+import 'package:africtong/src/features/authentification/views/signup/widgets/signup_form_view.dart';
+import 'package:flutter/material.dart';
 
 class SignupViews extends StatelessWidget {
   const SignupViews({super.key});
