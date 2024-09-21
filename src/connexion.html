@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/style.css">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Connexion</title>
+</head>
+<body>
+
+    <div class="header"></div>
+
+    <nav class="navigation home_navigation">
+        <a href="" class="brand">africtong</a>
+        <ul class="">
+            <li class="link"><a href="#">Lecons</a></li>
+            <li class="link"><a href="#">Accents</a></li>
+            <li class="link">Exercices</li>
+            <li class="link">Quizz</li>
+        </ul>
+        <!-- <div>
+            <button class="btn connexion" id="connexion">Connexion</button>
+            <button class="btn inscription" id="inscription">Inscription</button>
+        </div> -->
+        <button class="menu" id="open_menu">
+            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+              </svg>              
+        </button>
+    </nav>
+
+    <div class="menuDiv" id="menuDiv">
+        <div class="div_content_menu">
+            <h1 class="title_menu">africtong</h1>
+            <button id="close_menu">
+                <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18 17.94 6M18 18 6.06 6"/>
+              </svg>
+            </button>
+            <ul class="links_menu">
+                <li class="link_menu"><a href="./src/index.htm">Home</a></li>
+                <li class="link_menu"><a href="#">About</a></li>
+                <li class="link_menu"><a href="#">Help</a></li>
+            </ul>
+            <div class="btn_menu">
+                <button class="btn connexion" id="connexion">Connexion</button><br>
+                <button class="btn inscription" id="inscription">Inscription</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="title"><span id="type">Connexion</span> a votre compte</h1>
+        <p class="banner">Re.Bienvenue. Selectionner une methode</p>
+
+        <div class="method-connexion">
+            <button class="btn method" id="connnexionGoogle">
+                <img src="../assets/logo/chercher.png" alt="">
+                <p>Google</p>
+            </button>
+        </div>
+
+        <div class="other">
+            <hr>
+            <p>Ou utilisez l'adresse mail</p>
+            <hr>
+        </div>
+
+        <div class="div-form">
+
+            <!-- connexion -->
+            <form id="form-connexion">
+                <div class="div-input">
+                    <i class="fa-solid fa-envelope icon"></i>             
+                    <input type="email" id="email" name="email" class="input" placeholder="Adresse mail">
+                </div>
+                <p id="erreurEmail" class="erreur"></p>
+                <div class="div-input">
+                    <i class="fa-solid fa-fingerprint icon"></i>                    
+                    <input type="password" id="mdp" name="mdp" class="input" placeholder="Mot de passe">
+                </div>
+                <p id="erreurMdp" class="erreur"></p>
+                <div class="div-input">
+                    <button class="submit" id="connexionEmail">Connexion</button>
+                </div>
+                <div class="orther-input">
+                    <div class="div-checkbox">
+                        <input type="checkbox" id="check">
+                        <label for="check">Se rappeler de moi</label>
+                    </div>
+                    <a href="#">Mot de passe oublie!</a>
+                </div>
+                <!-- <p class="pas-compte">Pas de compte? <button id="inscription">Inscrivez vous!</button></p> -->
+            </form>
+            
+            <!-- inscription -->
+            <!-- <form action="post" id="form-inscription">
+                <div class="div-input">
+                    <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-width="1.5" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                      </svg>                                       
+                    <input type="nom" name="" id="" class="input" placeholder="Nom d'utilisateur">
+                </div>
+                <div class="div-input">
+                    <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
+                      </svg>                  
+                    <input type="email" name="" id="" class="input" placeholder="Adresse mail">
+                </div>
+                <div class="div-input">
+                    <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14v3m-3-6V7a3 3 0 1 1 6 0v4m-8 0h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z"/>
+                      </svg>                  
+                    <input type="password" name="" id="" class="input" placeholder="Mot de passe">
+                </div>
+                <div class="div-input">
+                    <input type="submit" value="Inscription" class="submit">
+                </div>
+                <p class="pas-compte">Deja un compte? <button id="connexion">Connectez vous!</button></p>
+            </form> -->
+        </div>
+    </div>
+
+    <div class="menuDiv" id="menuDiv">
+        <div class="div_content_menu">
+            <h1 class="title_menu">be</h1>
+            <button id="close_menu">
+                <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18 17.94 6M18 18 6.06 6"/>
+              </svg>
+            </button>
+            <ul class="links_menu">
+                <li class="link_menu"><a href="#">Home</a></li>
+                <li class="link_menu"><a href="#">About</a></li>
+                <li class="link_menu"><a href="#">Help</a></li>
+            </ul>
+            <div class="btn_menu">
+                <button class="btn connexion" id="connexion">Connexion</button><br>
+                <button class="btn inscription" id="inscription">Inscription</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"></div> 
+    <script src="../dist/connexion.js"></script>
+    <script src="../dist/form_control.js"></script>
+</body>
+</html>

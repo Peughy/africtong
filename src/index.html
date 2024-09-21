@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="body">
+
+  <!-- sidebar -->
+  <div class="sidebar">
+    <h1 class="text-mediumSize text-white group-hover:font-bold font-comfortaa text-center mb-8">africtong</h1>
+    <ul>
+      <li class="flex items-center my-4 bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i class="text-black text-iconSize mr-2 fa-solid fa-chart-simple"></i>
+        <a href="#" class="uppercase font-bold text-black font-openSans">Dashboard</a>
+      </li>
+      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-users"></i>
+        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Utilisateurs</a>
+      </li>
+      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-book"></i>
+        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Leçons</a>
+      </li>
+      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-bullhorn"></i>
+        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Accents</a>
+      </li>
+      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-puzzle-piece"></i>
+        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Exercices</a>
+      </li>
+      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-circle-question"></i>
+        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Quizz</a>
+      </li>
+      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-comments"></i>
+        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Discussions</a>
+      </li>
+      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-robot"></i>
+        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Espace Jimmy</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- body content -->
+  <div class="mainContainer">
+      <!-- header container -->
+       <div class="w-full md:flex items-center justify-between pb-pad">
+          <div class="flex items-center justify-center">
+            <div class="btnMenu">
+              <i class="fa-solid fa-bars-progress text-mediumSize text-primaryColor"></i>
+            </div>
+            <h1 class="text-largeSize font-500 text-primaryColor font-comfortaa font-bold">Administrateur</h1>
+          </div>
+          <div class="flex items-center mt-4 md:mt-0">
+              <input type="text" name="Chercher" style="outline: none" id="" placeholder="Chercher..." class="border-none bg-btnPresentationIcon/20 outline-none px-4 py-2 rounded-borderBottomNavigationRadius placeholder:font-openSans text-textSize">
+              <div class="bg-primaryColor rounded-full ml-2 py-1 px-2 flex items-center justify-center">
+                <p class=" text-white font-dmSerifDisplay font-bold">A</p>
+              </div>
+          </div>
+       </div>
+
+       <!-- stats -->
+        <div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="rounded-borderBottomNavigationRadius group hover:bg-primaryColor hover:cursor-pointer flex items-center justify-between shadow-md py-2 bg-white px-padVertical">
+                    <div>
+                        <p class="text-lSize group-hover:text-white font-openSans text-primaryColor tracking-letterSpacing">18</p>
+                        <p class="text-langSize group-hover:text-white -mt-2 text-btnPresentationIcon font-dmSerifDisplay font-bold">Leçons</p>
+                    </div>
+                    <span class=""><i class="text-btnPresentationIcon text-largeSize group-hover:text-white fa-solid fa-book"></i></span>
+                </div>
+                <div class="rounded-borderBottomNavigationRadius hover:cursor-pointer flex items-center justify-between shadow-md py-2 bg-white px-padVertical group hover:bg-primaryColor">
+                  <div>
+                    <p class="text-lSize font-openSans text-primaryColor tracking-letterSpacing group-hover:text-white">50</p>
+                    <p class="text-langSize -mt-2 group-hover:text-white text-btnPresentationIcon font-dmSerifDisplay font-bold">Accents</p>
+                  </div>
+                  <span class=""><i class="text-btnPresentationIcon text-largeSize group-hover:text-white fa-solid fa-bullhorn"></i></span>
+                </div>
+                <div class="rounded-borderBottomNavigationRadius hover:cursor-pointer flex items-center justify-between shadow-md py-2 bg-white px-padVertical group hover:bg-primaryColor">
+                  <div>
+                    <p class="text-lSize font-openSans text-primaryColor tracking-letterSpacing group-hover:text-white">10</p>
+                    <p class="text-langSize -mt-2 group-hover:text-white text-btnPresentationIcon font-dmSerifDisplay font-bold">Exercices</p>
+                  </div>
+                  <span class=""><i class="text-btnPresentationIcon text-largeSize group-hover:text-white fa-solid fa-puzzle-piece"></i></span>
+                </div>
+                <div class="rounded-borderBottomNavigationRadius hover:cursor-pointer flex items-center justify-between shadow-md py-2 bg-white px-padVertical group hover:bg-primaryColor">
+                  <div>
+                    <p class="text-lSize font-openSans text-primaryColor tracking-letterSpacing group-hover:text-white">30</p>
+                    <p class="text-langSize -mt-2 group-hover:text-white text-btnPresentationIcon font-dmSerifDisplay font-bold">Quizz</p>
+                  </div>
+                  <span class=""><i class="text-btnPresentationIcon text-largeSize group-hover:text-white fa-solid fa-circle-question"></i></span>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- lecons dashboard sections -->
+        <div class="relative my-pad w-full grid grid-cols-2 gap-pad min-h-52">
+          <div class="relative w-full shadow-lg flex items-center justify-center bg-white p-pad rounded-borderBottomNavigationRadius">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="relative w-full shadow-lg flex items-center justify-center bg-white p-pad rounded-borderBottomNavigationRadius">
+            <canvas id="myChartB"></canvas>
+          </div>
+        </div>
+
+      
+
+  </div>
+  <script src="../dist/main.js"></script>
+</body>
+</html>
