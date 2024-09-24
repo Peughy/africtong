@@ -1439,6 +1439,10 @@ a{
   top: 6rem;
 }
 
+.right-1 {
+  right: 0.25rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1511,6 +1515,14 @@ a{
 
 .mb-pad {
   margin-bottom: 24px;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .block {

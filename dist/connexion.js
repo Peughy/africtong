@@ -46,3 +46,20 @@ close_menu.addEventListener('click', () => {
 menuDiv.addEventListener('click', () =>{
     menuDiv.style.transform = "scale(0)"
 })
+
+
+// treat error div
+divError = document.getElementById("divError")
+btnError = document.getElementById("btnError")
+
+btnError.addEventListener('click', () =>{
+    divError.style.display = "none";
+})
+
+// treat error div
+divSuccess = document.getElementById("divSuccess")
+btnSuccess = document.getElementById("btnSuccess")
+
+btnSuccess.addEventListener('click', () => {
+    divSuccess.style.display = "none";
+})

@@ -26,6 +26,10 @@ var connexionEmail = document.getElementById("connexionEmail");
 var erreurEmail = document.getElementById("erreurEmail");
 var erreurMdp = document.getElementById("erreurMdp");
 
+// message error
+msgSuccess = document.getElementById("msgSuccess")
+msgError = document.getElementById("msgError")
+
 connexionEmail.addEventListener('click', (e) => {
     e.preventDefault();
 
@@ -57,17 +61,17 @@ connexionEmail.addEventListener('click', (e) => {
             // Signed in 
             const user = userCredential.user;
             if(user != null){
-                alert("goode");
+                msgSuccess = "Connexion reuissie"
             }
             else{
-                alert("bad");
+                msgError = "Le compte n'a pas ete trouve";
             }
         })
         .catch((error) => {
             const errorCode = error.code;
-            alert(errorCode);
+            msgError.innerHTML = "Erreur: " + errorCode;
             const errorMessage = error.message;
-            alert(errorMessage);
+            msgError.innerHTML = "Erreur: " + errorMessage;
         });
     }
     else

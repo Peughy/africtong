@@ -153,18 +153,19 @@
     </div>
 
     <!-- div erreue -->
-     <div class="fixed top-24 right-0 px-5 py-2 rounded-borderRadius bg-red-500">
+     <div id="divError" class="hidden fixed top-24 right-1 px-5 py-2 rounded-borderRadius  items-center bg-red-500">
         <p id="msgError" class="font-openSans text-smallBtn">Message d'erreur</p>
-        <span></span>
+        <span id="btnError" class="ml-8 text-iconSize text-white cursor-pointer">&times;</span>
      </div>
 
     <!-- div erreue -->
-    <div class="fixed top-24 right-0 px-5 py-2 rounded-borderRadius bg-green-500">
-        <p id="msgError" class="font-openSans text-smallBtn text-white">Message d'erreur</p>
+    <div id="divSuccess" class="hidden fixed top-24 right-1 px-5 py-2 rounded-borderRadius bg-green-500  items-center">
+        <p id="msgSuccess" class="font-openSans text-smallBtn text-white">Message d'erreur</p>
+        <span id="btnSuccess" class="ml-8 text-iconSize text-white cursor-pointer">&times;</span>
      </div>
 
     <div class="footer"></div> 
-    <script src="../dist/connexion.js"></script>
     <script type="module" src="../dist/form_control.js" defer></script>
+    <script src="../dist/connexion.js"></script>
 </body>
 </html>
