@@ -5,10 +5,10 @@ const ctd = document.getElementById('myChartB');
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Lecon 1', 'Lecon 2', 'Lecon 3'],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        label: 'par lecon',
+        data: [12, 19, 18],
         borderWidth: 2,
         backgroundColor: '#FFFF00',
       }]
@@ -18,7 +18,7 @@ const ctd = document.getElementById('myChartB');
       plugins: {
         subtitle: {
             display: true,
-            text: 'Custom Chart Subtitle'
+            text: 'Repartition d\'apprentissage des leçons'
         }
     }
     }

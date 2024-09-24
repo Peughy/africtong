@@ -29,10 +29,10 @@
             <li class="link">Exercices</li>
             <li class="link">Quizz</li>
         </ul>
-        <!-- <div>
+        <div>
             <button class="btn connexion" id="connexion">Connexion</button>
             <button class="btn inscription" id="inscription">Inscription</button>
-        </div> -->
+        </div>
         <button class="menu" id="open_menu">
             <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
@@ -82,13 +82,13 @@
             <!-- connexion -->
             <form id="form-connexion">
                 <div class="div-input">
-                    <i class="fa-solid fa-envelope icon"></i>             
-                    <input type="email" id="email" name="email" class="input" placeholder="Adresse mail">
+                    <i class="fa-solid fa-envelope icon"></i>     
+                    <input type="email" name="email" id="email" class="input" placeholder="Adresse mail">
                 </div>
                 <p id="erreurEmail" class="erreur"></p>
                 <div class="div-input">
-                    <i class="fa-solid fa-fingerprint icon"></i>                    
-                    <input type="password" id="mdp" name="mdp" class="input" placeholder="Mot de passe">
+                    <i class="fa-solid fa-fingerprint icon"></i> 
+                    <input type="password" name="mdp" id="mdp" class="input" placeholder="Mot de passe">
                 </div>
                 <p id="erreurMdp" class="erreur"></p>
                 <div class="div-input">
@@ -105,7 +105,7 @@
             </form>
             
             <!-- inscription -->
-            <!-- <form action="post" id="form-inscription">
+            <form id="form-inscription">
                 <div class="div-input">
                     <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-width="1.5" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
@@ -128,7 +128,7 @@
                     <input type="submit" value="Inscription" class="submit">
                 </div>
                 <p class="pas-compte">Deja un compte? <button id="connexion">Connectez vous!</button></p>
-            </form> -->
+            </form>
         </div>
     </div>
 
@@ -152,8 +152,19 @@
         </div>
     </div>
 
+    <!-- div erreue -->
+     <div class="fixed top-24 right-0 px-5 py-2 rounded-borderRadius bg-red-500">
+        <p id="msgError" class="font-openSans text-smallBtn">Message d'erreur</p>
+        <span></span>
+     </div>
+
+    <!-- div erreue -->
+    <div class="fixed top-24 right-0 px-5 py-2 rounded-borderRadius bg-green-500">
+        <p id="msgError" class="font-openSans text-smallBtn text-white">Message d'erreur</p>
+     </div>
+
     <div class="footer"></div> 
     <script src="../dist/connexion.js"></script>
-    <script src="../dist/form_control.js"></script>
+    <script type="module" src="../dist/form_control.js" defer></script>
 </body>
 </html>

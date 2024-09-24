@@ -19,40 +19,43 @@
 <body class="body">
 
   <!-- sidebar -->
-  <div class="sidebar">
+  <div class="sidebar" id="sidebar">
+    <div class="text-right">
+      <button class="btnExist" id="btnExist">&times;</button>
+    </div>
     <h1 class="text-mediumSize text-white group-hover:font-bold font-comfortaa text-center mb-8">africtong</h1>
     <ul>
-      <li class="flex items-center my-4 bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
-        <i class="text-black text-iconSize mr-2 fa-solid fa-chart-simple"></i>
-        <a href="#" class="uppercase font-bold text-black font-openSans">Dashboard</a>
+      <li id="link" class="flex items-center my-5 active-li py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i id="icon-link" class="active-i text-iconSize mr-2 fa-solid fa-chart-simple"></i>
+        <a href="#" id="a-link" class="uppercase active-a font-openSans">Dashboard</a>
       </li>
-      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
-        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-users"></i>
-        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Utilisateurs</a>
+      <li id="link" class="inactive-li flex items-center my-5 group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i id="icon-link" class="inactive-i group-hover:text-black text-iconSize mr-2 fa-solid fa-book"></i>
+        <a href="#" id="a-link" class="uppercase group-hover:font-bold inactive-a group-hover:text-black font-openSans">Leçons</a>
       </li>
-      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
-        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-book"></i>
-        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Leçons</a>
+      <li id="link" class="inactive-li flex items-center my-5 group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i id="icon-link" class="inactive-i group-hover:text-black text-iconSize mr-2 fa-solid fa-bullhorn"></i>
+        <a href="#" id="a-link" class="uppercase group-hover:font-bold inactive-a group-hover:text-black font-openSans">Accents</a>
       </li>
-      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
-        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-bullhorn"></i>
-        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Accents</a>
+      <li id="link" class="inactive-li flex items-center my-5 group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i id="icon-link" class="inactive-i group-hover:text-black text-iconSize mr-2 fa-solid fa-puzzle-piece"></i>
+        <a href="#" id="a-link" class="uppercase group-hover:font-bold inactive-a group-hover:text-black font-openSans">Exercices</a>
       </li>
-      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
-        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-puzzle-piece"></i>
-        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Exercices</a>
+      <li id="link" class="inactive-li flex items-center my-5 group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i id="icon-link" class="inactive-i group-hover:text-black text-iconSize mr-2 fa-solid fa-circle-question"></i>
+        <a href="#" id="a-link" class="uppercase group-hover:font-bold inactive-a group-hover:text-black font-openSans">Quizz</a>
       </li>
-      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
-        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-circle-question"></i>
-        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Quizz</a>
+      <li id="link" class="inactive-li flex items-center my-5 group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i id="icon-link" class="inactive-i group-hover:text-black text-iconSize mr-2 fa-solid fa-comments"></i>
+        <a href="#" id="a-link" class="uppercase group-hover:font-bold inactive-a group-hover:text-black font-openSans">Discussions</a>
       </li>
-      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
-        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-comments"></i>
-        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Discussions</a>
+      <li id="link" class="inactive-li flex items-center my-5 group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i id="icon-link" class="inactive-i group-hover:text-black text-iconSize mr-2 fa-solid fa-users"></i>
+        <a href="#" id="a-link" class="uppercase group-hover:font-bold inactive-a group-hover:text-black font-openSans">Apprenants</a>
       </li>
-      <li class="flex items-center my-4 bg-transparent group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
-        <i class="text-white group-hover:text-black text-iconSize mr-2 fa-solid fa-robot"></i>
-        <a href="#" class="uppercase group-hover:font-bold text-white group-hover:text-black font-openSans">Espace Jimmy</a>
+      <li id="link" class="flex items-center my-5 group hover:bg-secondaryColor py-2 px-4 rounded-borderBottomNavigationRadius hover:cursor-pointer">
+        <i id="icon-link" class="inactive-i group-hover:text-black text-iconSize mr-2 fa-solid fa-robot"></i>
+        <a href="#" id="a-link" class="uppercase group-hover:font-bold inactive-a group-hover:text-black font-openSans">Espace Jimmy</a>
       </li>
     </ul>
   </div>
@@ -62,10 +65,10 @@
       <!-- header container -->
        <div class="w-full md:flex items-center justify-between pb-pad">
           <div class="flex items-center justify-center">
-            <div class="btnMenu">
+            <div class="btnMenu" id="btnMenu">
               <i class="fa-solid fa-bars-progress text-mediumSize text-primaryColor"></i>
             </div>
-            <h1 class="text-largeSize font-500 text-primaryColor font-comfortaa font-bold">Administrateur</h1>
+            <h1 class="text-largeSize font-500 text-primaryColor font-comfortaa font-bold" id="title">Dashboard</h1>
           </div>
           <div class="flex items-center mt-4 md:mt-0">
               <input type="text" name="Chercher" style="outline: none" id="" placeholder="Chercher..." class="border-none bg-btnPresentationIcon/20 outline-none px-4 py-2 rounded-borderBottomNavigationRadius placeholder:font-openSans text-textSize">
@@ -75,8 +78,10 @@
           </div>
        </div>
 
-       <!-- stats -->
-        <div>
+       <!-- dashboard section -->
+        <div id="dashboard">
+          <!-- stats -->
+          <div>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <div class="rounded-borderBottomNavigationRadius group hover:bg-primaryColor hover:cursor-pointer flex items-center justify-between shadow-md py-2 bg-white px-padVertical">
                     <div>
@@ -111,18 +116,162 @@
         </div>
         
         <!-- lecons dashboard sections -->
-        <div class="relative my-pad w-full grid grid-cols-2 gap-pad min-h-52">
-          <div class="relative w-full shadow-lg flex items-center justify-center bg-white p-pad rounded-borderBottomNavigationRadius">
-            <canvas id="myChart"></canvas>
-          </div>
-          <div class="relative w-full shadow-lg flex items-center justify-center bg-white p-pad rounded-borderBottomNavigationRadius">
-            <canvas id="myChartB"></canvas>
+        <div>
+          <h1 class="font-dmSerifDisplay text-lSize font-bold text-primaryColor my-pad">Leçons</h1>
+          <div class="relative my-pad w-full grid grid-cols-2 gap-pad min-h-52">
+            <div class="relative w-full shadow-lg flex-col flex items-center justify-between bg-white p-pad rounded-borderBottomNavigationRadius cursor-pointer hover:bg-chooseLangOff">
+              <canvas id="myChart"></canvas>
+              <p class="text-textSize">Les leçons les plus etudiés</p>
+            </div>
+            <div class="relative w-full shadow-lg flex items-center justify-center bg-white p-pad rounded-borderBottomNavigationRadius cursor-pointer hover:bg-chooseLangOff">
+              <canvas id="myChartB"></canvas>
+            </div>
           </div>
         </div>
 
+        <!-- utilisateurs dashboard sections -->
+        <div>
+          <h1 class="font-dmSerifDisplay text-lSize font-bold text-primaryColor my-pad">Leçons</h1>
+          <div class="relative my-pad w-full grid grid-cols-2 gap-pad min-h-52">
+            <div class="relative w-full shadow-lg flex-col flex items-center justify-between bg-white p-pad rounded-borderBottomNavigationRadius cursor-pointer hover:bg-chooseLangOff">
+              <canvas id="myChart"></canvas>
+              <p class="text-textSize">Les leçons les plus etudiés</p>
+            </div>
+            <div class="relative w-full shadow-lg flex items-center justify-center bg-white p-pad rounded-borderBottomNavigationRadius cursor-pointer hover:bg-chooseLangOff">
+              <canvas id="myChartB"></canvas>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- lecons section -->
+         <div id="lecons">
+
+            <!-- btn to add new lecons  -->
+             <div class="flex items-end justify-end">
+                <button class="bg-secondaryColor flex items-center justify-center px-4 py-2 rounded-borderBottomNavigationRadius">
+                  <i class="font-iconSize mr-2 fa-solid fa-book"></i>
+                  <p class="font-bold text-smallBtn uppercase text-black">nouvelle leçon</p>
+                </button>
+             </div>
+
+             <!-- lessons list -->
+            <div>
+
+              <!-- lessons -->
+               <div class="mt-5percent">
+
+                  <!-- unique lessons -->
+                  <div id="leconUniques" class="mb-pad lecon border-l-4 border-l-primaryColor shadow-sm rounded-l-borderRadius">
+                    <!-- lessons title -->
+                    <div class="flex items-center justify-between bg-white p-3">
+                      <div class="flex items-center">
+                        <h1 class="font-textSize font-comfortaa font-bold text-primaryColor mr-2">Lecon 1: Les nombres de 0 a 10</h1>
+                        <span class="bg-secondaryColor text-black text-smallBtn p-0.5 rounded-borderBottomNavigationRadius">Grammaire</span>
+                      </div>
+                      <button class="cursor-pointer" id="controlLecons">
+                        <i class="text-iconSize fa-solid fa-sort-down"></i>
+                      </button>
+                  </div>
+
+                  <!-- lessons body -->
+                  <div class="bg-white px-3 pt-3 pb-1.5">
+                        <p class="text-btnPresentationIcon text-textSize font-openSans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat hic rerum molestias, asperiores itaque ad assumenda et soluta porro officia impedit doloribus cupiditate! Temporibus, possimus tenetur aliquid magnam veritatis illo.</p>
+                        <!-- lessons footre -->
+                        <div class="mt-5 flex items-center justify-between">
+                            <button class="rounded-borderRadius bg-secondaryColor font-bold px-3 py-1.5 text-smallBtn mr-2">Modifier</button>
+                            <button class="rounded-borderRadius border border-red-500 font-bold px-3 py-1.5 hover:bg-red-500 text-smallBtn text-red-500 hover:text-white bg-transparent">Supprimer</button>
+                        </div>
+                  </div>
+                  </div>
+
+                  <!-- unique lessons -->
+                  <div id="leconUniques" class="mb-pad lecon border-l-4 border-l-primaryColor shadow-sm rounded-l-borderRadius">
+                    <!-- lessons title -->
+                    <div class="flex items-center justify-between bg-white p-3">
+                      <div class="flex items-center">
+                        <h1 class="font-textSize font-comfortaa font-bold text-primaryColor mr-2">Lecon 1: Les nombres de 0 a 10</h1>
+                        <span class="bg-secondaryColor text-black text-smallBtn p-0.5 rounded-borderBottomNavigationRadius">Grammaire</span>
+                      </div>
+                      <button class="cursor-pointer" id="controlLecons">
+                        <i class="text-iconSize fa-solid fa-sort-down"></i>
+                      </button>
+                  </div>
+
+                  <!-- lessons body -->
+                  <div class="bg-white px-3 pt-3 pb-1.5">
+                        <p class="text-btnPresentationIcon text-textSize font-openSans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat hic rerum molestias, asperiores itaque ad assumenda et soluta porro officia impedit doloribus cupiditate! Temporibus, possimus tenetur aliquid magnam veritatis illo.</p>
+                        <!-- lessons footre -->
+                        <div class="mt-5 flex items-center justify-between">
+                            <button class="rounded-borderRadius bg-secondaryColor font-bold px-3 py-1.5 text-smallBtn mr-2">Modifier</button>
+                            <button class="rounded-borderRadius border border-red-500 font-bold px-3 py-1.5 hover:bg-red-500 text-smallBtn text-red-500 hover:text-white bg-transparent">Supprimer</button>
+                        </div>
+                  </div>
+                  </div>
+
+                  <!-- unique lessons -->
+                  <div id="leconUniques" class="mb-pad lecon border-l-4 border-l-primaryColor shadow-sm rounded-l-borderRadius">
+                    <!-- lessons title -->
+                    <div class="flex items-center justify-between bg-white p-3">
+                      <div class="flex items-center">
+                        <h1 class="font-textSize font-comfortaa font-bold text-primaryColor mr-2">Lecon 1: Les nombres de 0 a 10</h1>
+                        <span class="bg-secondaryColor text-black text-smallBtn p-0.5 rounded-borderBottomNavigationRadius">Grammaire</span>
+                      </div>
+                      <button class="cursor-pointer" id="controlLecons">
+                        <i class="text-iconSize fa-solid fa-sort-down"></i>
+                      </button>
+                  </div>
+
+                  <!-- lessons body -->
+                  <div class="bg-white px-3 pt-3 pb-1.5">
+                        <p class="text-btnPresentationIcon text-textSize font-openSans">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat hic rerum molestias, asperiores itaque ad assumenda et soluta porro officia impedit doloribus cupiditate! Temporibus, possimus tenetur aliquid magnam veritatis illo.</p>
+                        <!-- lessons footre -->
+                        <div class="mt-5 flex items-center justify-between">
+                            <button class="rounded-borderRadius bg-secondaryColor font-bold px-3 py-1.5 text-smallBtn mr-2">Modifier</button>
+                            <button class="rounded-borderRadius border border-red-500 font-bold px-3 py-1.5 hover:bg-red-500 text-smallBtn text-red-500 hover:text-white bg-transparent">Supprimer</button>
+                        </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         <!-- Accents section -->
+          <div id="accents">
+
+          </div>
+
+
+          <!-- exercices section -->
+          <div id="exercices">
+
+          </div>
+
+          <!-- quizz section -->
+          <div id="quizz">
+
+          </div>
+
+          <!-- discussions section -->
+          <div id="discussions">
+
+          </div>
+
+          <!-- apprenants section -->
+          <div id="apprenants">
+
+          </div>
+
+
+          <!-- jimmy section -->
+          <div id="jimmy">
+
+          </div>
       
 
   </div>
   <script src="../dist/main.js"></script>
+  <script src="../dist/dash.js"></script>
 </body>
 </html>

@@ -30,6 +30,9 @@
     .btnMenu{
         @apply block mr-2 rounded-borderBottomNavigationRadius hover:bg-chooseLangOn hover:cursor-pointer p-3;
     }
+    .btnExist{
+        @apply block text-white text-largeSize hover:bg-white hover:text-black py-px px-0.5 rounded-full text-sm;
+    }
 
     .sidebar{
         position: fixed;
@@ -42,6 +45,37 @@
         z-index: 100;
         transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
         transform: translateX(-100%);
+    }
+
+    .active-li{
+        @apply bg-secondaryColor;
+    }
+    .inactive-li{
+        @apply bg-transparent;
+    }
+
+
+    .active-i{
+        @apply text-black;
+    }
+    .inactive-i{
+        @apply text-white;
+    }
+
+    .active-a{
+        @apply text-black font-bold;
+    }
+    .inactive-a{
+        @apply text-white font-normal;
+    }
+    .lecon{
+        height: 52px;
+        overflow: hidden;
+        transition: all .3s ease-in-out;
+    }
+
+    #controlLecons{
+        transition: all .3s ease-in-out;
     }
 
     @media(min-width: 975px) {
@@ -60,7 +94,7 @@
             height: 100%;
             transform: translateX(0);
         }
-        .btnMenu{
+        .btnMenu, .btnExist{
             @apply hidden
         }
     }

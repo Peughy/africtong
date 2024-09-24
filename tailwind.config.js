@@ -19,7 +19,8 @@ module.exports = {
         "btnText": 20,
         "langSize": 22,
         "textSize": 18,
-        "iconSize": 22
+        "iconSize": 22,
+        "smallBtn": 15,
       },
       fontFamily: {
         "comfortaa": "Comfortaa",
