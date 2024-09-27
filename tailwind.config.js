@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./node_modules/flowbite/**/*.js"],
+  content: [
+      "./assets/**/*.js",
+      "./controllers/**/*.js",
+      "./views/**/*.html", 
+      "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       colors: {
@@ -10,7 +14,8 @@ module.exports = {
           "chooseLangOff": "#EEEEEE",
           "questionColor": "#FFFF03",
           "blackColor": "#000",
-          "btnPresentationIcon": "#A9A9A9"
+          "btnPresentationIcon": "#A9A9A9",
+          "red": "#ff0000"
       },
       fontSize: {
         "lSize": 48,
@@ -83,6 +88,8 @@ module.exports = {
       height: {
         "emptySpace": 50,
         "hSpacing": 20,
+        "100px": 100,
+        "35px": 35,
         "5percent": "5%",
         "3percent": "3%",
         "10percent": "10%",
@@ -97,8 +104,10 @@ module.exports = {
         "90percent": "90%",
       },
       width: {
+        "35px": 35,
         "emptySpace": 50,
         "hSpacing": 20,
+        "100px": 100,
         "5percent": "5%",
         "3percent": "3%",
         "10percent": "10%",

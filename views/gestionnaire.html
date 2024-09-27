@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
+  <link href="../assets/css/output.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
@@ -68,12 +68,13 @@
             <div class="btnMenu" id="btnMenu">
               <i class="fa-solid fa-bars-progress text-mediumSize text-primaryColor"></i>
             </div>
-            <h1 class="text-largeSize font-500 text-primaryColor font-comfortaa font-bold" id="title">Dashboard</h1>
+            <h1 class="text-largeSize leading font-500 text-primaryColor font-dmSerifDisplay font-bold" id="title">Dashboard</h1>
           </div>
           <div class="flex items-center mt-4 md:mt-0">
-              <input type="text" name="Chercher" style="outline: none" id="" placeholder="Chercher..." class="border-none bg-btnPresentationIcon/20 outline-none px-4 py-2 rounded-borderBottomNavigationRadius placeholder:font-openSans text-textSize">
-              <div class="bg-primaryColor rounded-full ml-2 py-1 px-2 flex items-center justify-center">
-                <p class=" text-white font-dmSerifDisplay font-bold">A</p>
+              <input class="rounded-borderRadius" type="text" name="Chercher" style="outline: none" id="" placeholder="Chercher..." class="border-none bg-btnPresentationIcon/20 outline-none px-4 py-2 rounded-borderBottomNavigationRadius placeholder:font-openSans text-textSize">
+              <div class="rounded-full ml-2 flex items-center justify-center relative">
+                <span class="badge-mini"></span>
+                <img src="../assets/res/img.jfif" alt="" id="imgProfile" class="cursor-pointer object-cover w-35px h-35px rounded-full mr-2">
               </div>
           </div>
        </div>
@@ -145,11 +146,11 @@
         </div>
 
         <!-- lecons section -->
-         <div id="lecons">
+         <div id="lecons" class="hidden">
 
             <!-- btn to add new lecons  -->
              <div class="flex items-end justify-end">
-                <button class="bg-secondaryColor flex items-center justify-center px-4 py-2 rounded-borderBottomNavigationRadius">
+                <button id="displayAddLesson" class="bg-secondaryColor flex items-center justify-center px-4 py-2 rounded-borderBottomNavigationRadius">
                   <i class="font-iconSize mr-2 fa-solid fa-book"></i>
                   <p class="font-bold text-smallBtn uppercase text-black">nouvelle leçon</p>
                 </button>
@@ -180,7 +181,7 @@
                         <!-- lessons footre -->
                         <div class="mt-5 flex items-center justify-between">
                             <button class="rounded-borderRadius bg-secondaryColor font-bold px-3 py-1.5 text-smallBtn mr-2">Modifier</button>
-                            <button class="rounded-borderRadius border border-red-500 font-bold px-3 py-1.5 hover:bg-red-500 text-smallBtn text-red-500 hover:text-white bg-transparent">Supprimer</button>
+                            <button class="rounded-borderRadius border border-red font-bold px-3 py-1.5 hover:bg-red text-smallBtn text-red hover:text-white bg-transparent">Supprimer</button>
                         </div>
                   </div>
                   </div>
@@ -204,7 +205,7 @@
                         <!-- lessons footre -->
                         <div class="mt-5 flex items-center justify-between">
                             <button class="rounded-borderRadius bg-secondaryColor font-bold px-3 py-1.5 text-smallBtn mr-2">Modifier</button>
-                            <button class="rounded-borderRadius border border-red-500 font-bold px-3 py-1.5 hover:bg-red-500 text-smallBtn text-red-500 hover:text-white bg-transparent">Supprimer</button>
+                            <button class="rounded-borderRadius border border-red font-bold px-3 py-1.5 hover:bg-red text-smallBtn text-red hover:text-white bg-transparent">Supprimer</button>
                         </div>
                   </div>
                   </div>
@@ -228,7 +229,7 @@
                         <!-- lessons footre -->
                         <div class="mt-5 flex items-center justify-between">
                             <button class="rounded-borderRadius bg-secondaryColor font-bold px-3 py-1.5 text-smallBtn mr-2">Modifier</button>
-                            <button class="rounded-borderRadius border border-red-500 font-bold px-3 py-1.5 hover:bg-red-500 text-smallBtn text-red-500 hover:text-white bg-transparent">Supprimer</button>
+                            <button class="rounded-borderRadius border border-red font-bold px-3 py-1.5 hover:bg-red text-smallBtn text-red hover:text-white bg-transparent">Supprimer</button>
                         </div>
                   </div>
                   </div>
@@ -238,40 +239,129 @@
 
 
          <!-- Accents section -->
-          <div id="accents">
+          <div id="accents" class="hidden">
 
           </div>
 
 
           <!-- exercices section -->
-          <div id="exercices">
+          <div id="exercices" class="hidden">
 
           </div>
 
           <!-- quizz section -->
-          <div id="quizz">
+          <div id="quizz" class="hidden">
 
           </div>
 
           <!-- discussions section -->
-          <div id="discussions">
+          <div id="discussions" class="hidden">
 
           </div>
 
           <!-- apprenants section -->
-          <div id="apprenants">
+          <div id="apprenants" class="hidden">
 
           </div>
 
 
           <!-- jimmy section -->
-          <div id="jimmy">
+          <div id="jimmy" class="hidden">
 
           </div>
-      
 
+          <!-- gestionnaire -->
+           <div class="popProfile hidden" id="popProfile">
+              <!-- header -->
+              <div class="flex p-pad items-center flex-row">
+                  <div class="rounded-full mr-2 flex items-center justify-center relative">
+                    <span class="badge"></span>
+                    <img src="../assets/res/img.jfif" id="imgProfileGrand" alt="" class="object-cover w-emptySpace h-emptySpace rounded-full mr-2">
+                  </div>
+                  <div>
+                    <p class="font-openSans text-sm" id="nomProfile"></p>
+                    <p class="font-openSans text-sm" id="mailProfile"></p>
+                  </div>
+              </div>
+              <hr>
+              <div class="flex flex-col justify-start items-start py-padVertical">
+                <p class="p-4 w-full text-left text-sm hover:bg-chooseLangOff cursor-pointer">Mon profile</p>
+                <a href="#" class="p-4 block text-sm w-full hover:bg-chooseLangOff">Acceuil</a>
+                <button id="deconnexion" class="mx-2 px-2 py-1.5 text-white mt-2 font-bold text-sm rounded-borderRadius bg-red">Deconnexion</button>
+              </div>
+           </div>
   </div>
-  <script src="../dist/main.js"></script>
-  <script src="../dist/dash.js"></script>
+
+  <!-- ajout lecons -->
+  <div id="addLesson" class="fixed w-full h-full top-0 flex items-center justify-center">
+      <div class="bg-white w-40percent px-pad py-3 rounded-borderRadius">
+          <div class="mb-pad">
+            <h1 class="text-mediumSize font-bold font-dmSerifDisplay">Ajouter une leçon</h1>
+          </div>
+
+          <form>
+            <div class="grid grid-cols-2 gap-3">
+              <div class="flex flex-col mb-pad">
+                <label for="" class="mb-2 font-openSans text-sm">Titre de la leçon</label>
+                <input class="rounded-borderRadius font-openSans text-sm" id="titreLecon" type="text" placeholder="Entrer le nom de la leçon">
+                <p class="erreur" id="titreErreur"></p>
+              </div>
+              <div class="flex flex-col mb-pad">
+                <label for="" class="mb-2 font-openSans text-sm">Langue leçon</label>
+                <select name="" class="cursor-pointer rounded-borderRadius font-openSans text-sm" id="langueLecon">
+                  <option value="choix">Choisissez une langue</option>
+                  <option value="medumba">Medumba</option>
+                  <option value="ewondo">Ewondo</option>
+                </select>
+                <p class="erreur" id="langueErreur"></p>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              <div class="flex flex-col mb-pad">
+                <label for="" class="mb-2 font-openSans text-sm">Libellé de la leçon</label>
+                <input id="libelleLecon" class="rounded-borderRadius w-full font-openSans text-sm" type="text" placeholder="Entrer le nom de la leçon">
+                <p class="erreur" id="libelleErreur"></p>
+              </div>
+              <div class="flex flex-col mb-pad">
+                <label for="" class="mb-2 font-openSans text-sm">Sous discipline</label>
+                <select name="" class="cursor-pointer rounded-borderRadius font-openSans text-sm" id="disciplineLecon">
+                  <option value="choix">Choisissez une sous discipline</option>
+                  <option value="grammaire">Grammaire</option>
+                  <option value="conjugaison">Conjugaison</option>
+                  <option value="orthographe">Orthographe</option>
+                  <option value="vocabulaire">Vocabulaire</option>
+                  <option value="mathematique">Mathematique</option>
+                </select>
+                <p class="erreur" id="disciplineErreur"></p>
+              </div>
+            </div>
+            <div class="flex flex-col mb-pad">
+              <label for="" class="mb-2 font-openSans text-sm">Contenu de la leçon</label>
+              <textarea name="" class="rounded-borderRadius font-openSans text-sm" placeholder="Entrer le contenu de la leçon" rows="5" id="contentLecon"></textarea>
+              <p class="erreur" id="contenuErreur"></p>
+            </div>
+            <div class="flex mb-pad justify-end">
+              <button id="validAddLesson" class="bg-secondaryColor text-black font-bold uppercase px-2 py-1 font-openSans rounded-borderRadius inline mr-3">Ajouter la leçon</button>
+              <button id="hiddenAddLesson" class="bg-red inline font-bold text-white uppercase px-2 py-1 rounded-borderRadius font-openSans">Annuler</button>
+            </div>
+          </form>
+      </div>
+  </div>
+
+  <!-- div erreue -->
+  <div id="divError" class="hidden fixed top-24 right-1 px-5 py-2 rounded-borderRadius  items-center bg-red-500">
+    <p id="msgError" class="font-openSans text-smallBtn">Message d'erreur</p>
+    <span id="btnError" class="ml-8 text-iconSize text-black cursor-pointer">&times;</span>
+ </div>
+
+  <!-- div erreue -->
+  <div id="divSuccess" class="hidden fixed top-24 right-1 px-5 py-2 rounded-borderRadius bg-green-500  items-center">
+      <p id="msgSuccess" class="font-openSans text-smallBtn text-white">Message d'erreur</p>
+      <span id="btnSuccess" class="ml-8 text-iconSize text-white cursor-pointer">&times;</span>
+  </div>
+
+  <script type="module" src="../controllers/lecon_controller.js" defer></script>
+  <script type="module" src="../controllers/dashboard_controller.js" defer></script>
+  <script src="../assets/js/dash.js"></script>
 </body>
 </html>

@@ -84,3 +84,35 @@ controlLecons.forEach((controlLecon, index) => {
         }
     });
 });
+
+
+// profile
+
+const popProfile = document.getElementById("popProfile");
+const imgProfile = document.getElementById("imgProfile");
+
+imgProfile.addEventListener('mouseover', () => {
+    popProfile.classList.remove("hidden");
+    popProfile.classList.add("block");
+});
+
+imgProfile.addEventListener('mouseleave', () => {
+    setTimeout(() => {
+        popProfile.classList.remove("block");
+        popProfile.classList.add("hidden");
+    }, 3500);
+});
+
+// add list
+const displayAddLesson = document.getElementById("displayAddLesson");
+const hiddenAddLesson = document.getElementById("hiddenAddLesson");
+const addLesson = document.getElementById("addLesson");
+
+displayAddLesson.addEventListener('click', () => {
+    addLesson.style.transform = "translateY(0)";
+});
+
+hiddenAddLesson.addEventListener('click', (e) => {
+    e.preventDefault();
+    addLesson.style.transform = "translateY(-100%)";
+});

@@ -234,13 +234,12 @@ form{
 
 .erreur{
     color: red;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 16px;
-    font-weight: 400;
     font-family: "Open Sans";
 }
 
-.div-input .input{
+.div-input .input, .div-input select{
     padding: 10px 45px;
     border: 2px solid var(--border-gray);
     border-radius: var(--borderBottomNavigationRadius);
@@ -251,6 +250,11 @@ form{
     outline: none;
     outline-color: transparent;
     outline-width: 0;
+}
+
+.div-input select{
+    width: 100%;
+    cursor: pointer;
 }
 
 .div-input .input:focus{

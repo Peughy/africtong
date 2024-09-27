@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../dist/style.css">
-    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="../assets/css/output.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
@@ -49,7 +49,7 @@
               </svg>
             </button>
             <ul class="links_menu">
-                <li class="link_menu"><a href="./src/index.htm">Home</a></li>
+                <li class="link_menu"><a href="">Home</a></li>
                 <li class="link_menu"><a href="#">About</a></li>
                 <li class="link_menu"><a href="#">Help</a></li>
             </ul>
@@ -107,25 +107,31 @@
             <!-- inscription -->
             <form id="form-inscription">
                 <div class="div-input">
-                    <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-width="1.5" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                      </svg>                                       
-                    <input type="nom" name="" id="" class="input" placeholder="Nom d'utilisateur">
+                    <i class="icon fa-solid fa-user"></i>                                       
+                    <input type="nom" name="" id="nameInscription" class="input" placeholder="Nom d'utilisateur">
                 </div>
+                <p id="erreurNameI" class="erreur"></p>
                 <div class="div-input">
-                    <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
-                      </svg>                  
-                    <input type="email" name="" id="" class="input" placeholder="Adresse mail">
+                    <i class="fa-solid fa-envelope icon"></i>                  
+                    <input type="email" name="" id="emailInscription" class="input" placeholder="Adresse mail">
                 </div>
+                <p id="erreurEmailI" class="erreur"></p>
                 <div class="div-input">
-                    <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14v3m-3-6V7a3 3 0 1 1 6 0v4m-8 0h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z"/>
-                      </svg>                  
-                    <input type="password" name="" id="" class="input" placeholder="Mot de passe">
+                    <i class="fa-solid fa-fingerprint icon"></i>
+                    <input type="password" name="" id="mdpInscription" class="input" placeholder="Mot de passe">
                 </div>
+                <p id="erreurMdpI" class="erreur"></p>
                 <div class="div-input">
-                    <input type="submit" value="Inscription" class="submit">
+                    <i class="fa-solid fa-language icon"></i>
+                    <select name="langue" id="langue">
+                        <option value="choix">Choisissez une langue</option>
+                        <option value="medumba">Medumba</option>
+                        <option value="ewondo">Ewondo</option>
+                    </select>
+                </div>
+                <p id="erreurLangueI" class="erreur"></p>
+                <div class="div-input">
+                    <input type="submit" id="inscriptionEmail" value="Inscription" class="submit">
                 </div>
                 <p class="pas-compte">Deja un compte? <button id="connexion">Connectez vous!</button></p>
             </form>
@@ -155,7 +161,7 @@
     <!-- div erreue -->
      <div id="divError" class="hidden fixed top-24 right-1 px-5 py-2 rounded-borderRadius  items-center bg-red-500">
         <p id="msgError" class="font-openSans text-smallBtn">Message d'erreur</p>
-        <span id="btnError" class="ml-8 text-iconSize text-white cursor-pointer">&times;</span>
+        <span id="btnError" class="ml-8 text-iconSize text-black cursor-pointer">&times;</span>
      </div>
 
     <!-- div erreue -->
@@ -165,7 +171,7 @@
      </div>
 
     <div class="footer"></div> 
-    <script type="module" src="../dist/form_control.js" defer></script>
-    <script src="../dist/connexion.js"></script>
+    <script type="module" src="../controllers/connexion_controller.js" defer></script>
+    <script src="../assets/js/login.js"></script>
 </body>
 </html>
