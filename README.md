@@ -1,16 +1,21 @@
 # africtong
 
-A new Flutter project.
+Application d'apprentissage de langue vernaculaire du Cameroun
 
-## Getting Started
+- Medumba
+- Ewondo
 
-This project is a starting point for a Flutter application.
+# Fontionalite
 
-A few resources to get you started if this is your first Flutter project:
+- Choisir une langue
+- Effectuer la traduction
+- Jouer au QUizz
+- Effectuer un un exercice
+- Consulter son profil
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Technologies 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter / Dart
+- Firebase
+- HTML / CSS
+- JavaScript
