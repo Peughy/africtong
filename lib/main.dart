@@ -1,5 +1,4 @@
 import 'package:africtong/firebase_options.dart';
-import 'package:africtong/src/commons/navigator_page_bar.dart';
 import 'package:africtong/src/constants/colors.dart';
 import 'package:africtong/src/constants/size.dart';
 import 'package:africtong/src/features/authentification/views/onBoarding/on_boarding_views.dart';
@@ -13,15 +12,14 @@ void main() async {
   runApp(MyApp());
 }
 
-// ignore: must_be_immutable
-class MyApp extends StatelessWidget {
-  MyApp({super.key});
 
-  // This widget is the root of your application.
-  NavigatorPage navigatorPage = NavigatorPage();
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
 
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
